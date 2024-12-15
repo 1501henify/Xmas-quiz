@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festliches Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hauptcontainer des Quiz -->
+    <!-- Main container of the quiz -->
+    <div class="quiz-container">
+      <h1>🎅 Festliches Weihnachts-Quiz 🎄</h1>
+      <!-- Frage wird hier angezeigt -->
+      <!-- The question will be displayed here -->
+      <div id="question">Frage wird geladen...</div>
+
+      <!-- Optionen/Antworten -->
+      <!-- Options/Answers -->
+      <div class="options">
+        <button class="option-btn" data-id="0">Option 1</button>
+        <button class="option-btn" data-id="1">Option 2</button>
+        <button class="option-btn" data-id="2">Option 3</button>
+        <button class="option-btn" data-id="3">Option 4</button>
+      </div>
+
+      <!-- Bereich für Ergebnisse -->
+      <!-- Area for results -->
+      <div id="result" class="hidden">
+        <p id="score">Dein Ergebnis: 0 von 0!</p>
+        <button id="restart">Nochmal spielen</button>
+      </div>
+    </div>
+
+    <!-- Verknüpfung zur JavaScript-Datei -->
+    <!-- Linking to the JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

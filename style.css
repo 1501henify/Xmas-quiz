@@ -1,0 +1,90 @@
+/* Allgemeine Stile für den Körper */
+/* General styles for the body */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #2a2a72; /* Dunkles Blau / Dark blue */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.quiz-container {
+  max-width: 500px;
+  margin: auto;
+  background: #1c1c3a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.option-btn {
+  padding: 10px 15px;
+  background: #4caf50; /* Grün / Green */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#restart {
+  padding: 10px 20px;
+  background: #2196f3; /* Blau / Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Schneefall-Effekt */
+@keyframes snow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh); /* Schnee fällt nach unten */
+  }
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: snow 10s linear infinite; /* Endloser Schneefall */
+}
+
+.snowflake:nth-child(odd) {
+  animation-duration: 8s;
+}
